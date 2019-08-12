@@ -22,15 +22,12 @@ public class LeitorTexto {
             while (sc.hasNextLine()) {
                 String linha = sc.next();
                 list.add(linha);
-                Log.i("passou", "Passou While");
             }
             sc.close();
         } catch (IOException e) {
             e.printStackTrace();
-            Log.i("passou", "Passou catch");
         }
 
-        Log.i("passou", "lista: " + list );
         return list;
     }
 }
